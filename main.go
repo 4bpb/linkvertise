@@ -76,7 +76,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 
 
-		_, _ = s.ChannelMessageSend(m.ChannelID, "Pong!")
+		_, _ = s.ChannelMessageSend(m.ChannelID, string(data))
     } else {
         fmt.Println("Message Does not contain Prefix")
     }
